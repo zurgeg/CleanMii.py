@@ -12,11 +12,11 @@ def cleanallfiles(folder):
 			if os.path.isfile(file_path) or os.path.islink(file_path):
 				print("Cleaning Thread: Unlinking %s" % file_path)
 				os.unlink(file_path)
-            elif os.path.isdir(file_path):
+           	 	elif os.path.isdir(file_path):
 				print("Cleaning Thread: Deleting %s" % file_path)
-                shutil.rmtree(file_path)
-        except Exception as e:
-            print(str("Failed to delete %s. Reason: %s" % (file_path, e)))
+                		shutil.rmtree(file_path)
+        	except Exception as e:
+            		print(str("Failed to delete %s. Reason: %s" % (file_path, e)))
 
 def printtime(threadName, delay):
     while config.timecsprnghash:
