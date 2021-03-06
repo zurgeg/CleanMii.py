@@ -1,7 +1,7 @@
-folderrange = 
-[
+folderrange = [
 	"changeme"
 	"youcanaddasmanyentriesasyouwant"
+	"itwillautodoallofthem"
 ]
 timeprintingdelay = 5
 dologging = True
