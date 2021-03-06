@@ -1,6 +1,5 @@
 import config
 import os
-import shutil
 import threading
 import time
 # CleanMii Daemon by 6100m, POC by Spotlightishere
@@ -14,9 +13,9 @@ def cleanallfiles(folder):
 				os.unlink(file_path)
            	 	elif os.path.isdir(file_path):
 				print("Cleaning Thread: Deleting %s" % file_path)
-                		shutil.rmtree(file_path)
+                		os.remove(file_path)
         	except Exception as e:
-            		print(str("Failed to delete %s. Reason: %s" % (file_path, e)))
+            		print(str("Cleaning Thread: Failed to delete %s. Reason: %s" % (file_path, e)))
 
 def printtime(threadName, delay):
     while config.timecsprnghash:
