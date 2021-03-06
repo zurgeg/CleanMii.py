@@ -26,7 +26,6 @@ def cleanallfiles(folder):
 def printtime(threadName, delay):
     while config.timecsprnghash:
         time.sleep(delay)
-        count += 1
         print(str("%s: %s" % (threadName, time.ctime(time.time()))))
 
 
@@ -51,5 +50,6 @@ for x in list(config.folderrange):
     else:
         pass
     while config.threadcsprnghash:
+        print("Main Thread: Multiplexing process begun")
         thread1.start()
         thread2.start()
