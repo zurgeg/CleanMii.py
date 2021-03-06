@@ -19,7 +19,7 @@ def cleanallfiles(folder):
                 os.remove(filepath)
         except Exception as e:
             print(
-                str("Cleaning Thread: Failed to delete %s. Reason: %s" % (filepath, e))
+                str("Cleaning Thread: Failed to delete %s: Reason: %s" % (filepath, e))
             )
 
 
@@ -32,14 +32,14 @@ def printtime(threadName, delay):
 
 for x in list(config.folderrange):
     if config.cleanfiles == True:
-        print("Cleaning thread began!")
+        print("Main Thread: Cleaning thread began")
         thread1 = threading.Thread(target=cleanallfiles(x), group=None)
     elif config.cleanfiles == False:
         pass
     else:
         pass
     if config.dologging == True:
-        print("Time thread began!")
+        print("Main Thread: Time thread began")
         thread2 = threading.Thread(
             target=printtime(
                 "Time Thread: Printing Time, Time is ", config.timeprintingdelay
