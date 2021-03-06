@@ -1,7 +1,7 @@
 folderrange = 
 [
-	"testdir/"
-	"testdir2/"
+	"changeme"
+	"youcanaddasmanyentriesasyouwant"
 ]
 timeprintingdelay = 5
 dologging = True
