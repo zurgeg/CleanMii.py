@@ -3,10 +3,20 @@ cleanuptestfiles:
     rm -rf testdir2/
     rm -rf testdir3/
     rm -rf testdir4/
+    rm -rf testdir5/
+    rm -rf testdir6/
+    rm -rf testdir7/
+    rm -rf testdir8/
+    rm -rf testdir9/
     rmdir testdir/
     rmdir testdir2/
     rmdir testdir3/
     rmdir testdir4/
+    rmdir testdir5/
+    rmdir testdir6/
+    rmdir testdir7/
+    rmdir testdir8/
+    rmdir testdir9/
 cleanuptemporarydatafilesinmainmode:
     rm -rf config.pyc
     rm -rf config.pyc/
