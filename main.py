@@ -50,6 +50,6 @@ for x in list(config.folderrange):
     else:
         pass
     while config.threadcsprnghash:
-        print("Main Thread: Multiplexing process begun")
+        print("Main Thread: Multiplexing process issued a syscall of all threads")
         thread1.start()
         thread2.start()
