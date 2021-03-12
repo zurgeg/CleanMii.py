@@ -1,10 +1,27 @@
 folderrange = [
-	"changeme"
-	"youcanaddasmanyentriesasyouwant"
-	"itwillautodoallofthem"
+	"replacewithfoldername1",
+	"replacewithfoldername2",
+	"replacewithfoldername3",
+	"replacewithfoldername4",
+	"replacewithfoldername5",
+	"replacewithfoldername6",
+	"replacewithfoldername7",
+	"replacewithfoldername8",
+	"replacewithfoldername9",
+	"replacewithfoldername10",
+	"replacewithfoldername11",
+	"replacewithfoldername12",
+	"replacewithfoldername13",
+	"replacewithfoldername14",
+	"replacewithfoldername15",
+	"replacewithfoldername16",
+	"replacewithfoldername17",
+	"replacewithfoldername18",
+	"replacewithfoldername19",
+	"replacewithfoldername20"
 ]
 timeprintingdelay = 5
 dologging = True
 cleanfiles = True
-timecsprnghash = "pleasechangeme"
-threadcsprnghash = "pleasechangeme"
+timecsprnghash = "pleasechangemethankyouverymuch"
+threadcsprnghash = "pleasechangemethankyouverymuch"
