@@ -35,12 +35,12 @@ runtestworkflow:
 	python3 main.py
 runmainworkflowwithoutlogging:
 	echo Running without logging...
-	python3 main.py  >/dev/null 2>&1 < /dev/null &
+	python3 main.py  >/dev/null 2>&1 >> /dev/null &
 	echo Daemon started!
 	echo Exiting makefile...
 runmainworkflowwithlogging:
 	echo Running with logging...
-	python3 main.py  >/dev/null 2>&1 < /dev/null >> log &
+	python3 main.py  >/dev/null 2>&1 >> /dev/null >> log &
 	echo Daemon started!
 	echo Exiting makefile...
 aptgetinstalldebugtools:
