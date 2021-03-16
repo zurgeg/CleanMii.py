@@ -1,4 +1,5 @@
 cleanuptestfiles:
+	echo Cleaning....
 	rm -rf testdir/
 	rm -rf testdir2/
 	rm -rf testdir3/
@@ -46,10 +47,14 @@ runmainworkflowwithlogging:
 aptgetinstalldebugtools:
 	apt-get install htop
 yumgetinstalldebugtools:
-	apt-get install htop
+	yum install htop
 aptinstalldebugtools:
 	apt install htop
 aptyvariantgetinstalldebugtools:
 	apt -y install htop
 aptivariantinstalldebugtools:
 	apt -i htop
+clearernix:
+	clear
+clearerwin:
+	cls
