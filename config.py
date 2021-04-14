@@ -26,3 +26,7 @@ dologging = True
 cleanfiles = True
 timecsprnghash = "pleasechangemethankyouverymuch"
 threadcsprnghash = "pleasechangemethankyouverymuch"
+initalthreadvalue = 0
+maxthreadvalue = 2
+thread1identifier = 1
+thread2identifier = 2
