@@ -21,7 +21,7 @@ folderrange = [
 	"replacewithfoldername20",
 	"replacewithfoldername21"
 ]
-timeprintingdelay = 4
+timeprintingdelay = 2
 dologging = True
 cleanfiles = True
 timecsprnghash = "pleasechangemethankyouverymuch"
