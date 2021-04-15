@@ -11,20 +11,18 @@ def cleanallfiles(folder):
         filepath = os.path.join(folder, filename)
         try:
             if os.path.isfile(filepath) or os.path.islink(filepath):
-                print("Cleaning Thread: Unlinking %s" % filepath)
+                print(f"Cleaning Thread: Unlinking {filepath}")
                 os.unlink(filepath)
             elif os.path.isdir(filepath):
-                print("Cleaning Thread: Deleting %s" % filepath)
+                print(f"Cleaning Thread: Deleting {filepath}")
                 os.remove(filepath)
         except Exception as e:
-            print(
-                str("Cleaning Thread: Failed to delete %s: Reason: %s" % (filepath, e))
-            )
+            print(f"Cleaning Thread: Failed to delete {filepath}: Reason: {e}")
 
 def printtime(threadName, delay):
     while config.timecsprnghash:
         time.sleep(delay)
-        print(str("%s: %s" % (threadName, time.ctime(time.time()))))
+        print(f"{thread}: {time.ctime(time.time())}")
 
 for x in list(config.folderrange):
     if config.cleanfiles == True:
